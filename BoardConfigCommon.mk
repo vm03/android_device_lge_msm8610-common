@@ -124,6 +124,9 @@ BOARD_USES_QCOM_HARDWARE := true
 # QCOM enhanced A/V
 TARGET_ENABLE_QC_AV_ENHANCEMENTS := true
 
+# RIL
+BOARD_RIL_CLASS := ../../../device/lge/msm8610-common/ril/
+
 # Camera
 USE_DEVICE_SPECIFIC_CAMERA := true
 TARGET_DISPLAY_INSECURE_MM_HEAP := true
