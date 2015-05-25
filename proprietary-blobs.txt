@@ -141,6 +141,13 @@ vendor/lib/libC2D2.so
 vendor/lib/libWVStreamControlAPI_L3.so
 vendor/lib/libwvm.so
 
+# Bluetooth
+bin/bdaddr_loader
+bin/btnvtool
+bin/hci_qcomm_init
+lib/libatd_corelib.so
+lib/libbtnv.so
+lib/liblgftmitem.so
 
 # Camera
 bin/mm-qcamera-daemon
@@ -243,17 +250,15 @@ vendor/lib/libthermalioctl.so
 vendor/lib/libthermalclient.so
 
 # Gps
-lib/hw/gps.default.so
-lib/libloc_core.so
-lib/libloc_eng.so
 lib/libloc_api_v02.so
 lib/libloc_ds_api.so
-lib/libgps.utils.so
 vendor/lib/liblocationservice.so
 vendor/lib/libulp2.so
 vendor/lib/libgeofence.so
 vendor/lib/libizat_core.so
 vendor/lib/liblbs_core.so
+vendor/lib/libquipc_os_api.so
+vendor/lib/libulp2.so
 
 # Sensors
 #vendor/lib/hw/sensors.msm8610.so

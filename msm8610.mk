@@ -114,7 +114,8 @@ PRODUCT_COPY_FILES += \
     device/lge/msm8610-common/rootdir/ueventd.msm8610.rc:root/ueventd.msm8610.rc \
     device/lge/msm8610-common/rootdir/sbin/bbx:root/sbin/bbx \
     device/lge/msm8610-common/rootdir/fscheck.sh:root/fscheck.sh \
-    device/lge/msm8610-common/prebuilt/etc/init.d/12dis_overlay:system/etc/init.d/12dis_overlay
+    device/lge/msm8610-common/prebuilt/etc/init.d/12dis_overlay:system/etc/init.d/12dis_overlay \
+    device/lge/msm8610-common/prebuilt/etc/init.zetaw.bt.sh:system/etc/init.zetaw.bt.sh 
 
 # TWRP
 PRODUCT_COPY_FILES += \
@@ -235,12 +236,13 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # QCOM Display
 PRODUCT_PROPERTY_OVERRIDES += \
-    debug.egl.hw=1 \
-    debug.sf.hw=1 \
-    debug.composition.type=dyn \
     persist.hwc.mdpcomp.enable=true \
-    debug.mdpcomp.logs=0 \
-    debug.enabletr=0
+    debug.sf.fb_always_on=1 \
+    debug.composition.type=gpu \
+    debug.gralloc.map_fb_memory=0 \
+    debug.hwc.dynThreshold=1.5 \
+    dalvik.vm.heapsize=36m \
+    dev.pm.dyn_samplingrate=1
 
 # QCOM Display
 PRODUCT_PACKAGES += \
@@ -416,9 +418,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     drm.service.enabled=true \
     persist.lg.data.autoprof.msim=true \
     persist.cne.feature=1 \
-    debug.sf.fb_always_on=1 \
-    persist.hwc.mdpcomp.enable=true \
-    dev.pm.dyn_samplingrate=1 \
     mmp.enable.3g2=true \
     media.aac_51_output_enabled=true \
     mm.enable.smoothstreaming=true \
@@ -457,4 +456,5 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.config.vc_call_vol_steps=6 \
     persist.data.sbp.update=0 \
     persist.radio.rat_on=legacy \
-    ro.lge.proximity.delay=25
+    ro.lge.proximity.delay=25 \
+    ro.telephony.ril_class=LgeRIL
