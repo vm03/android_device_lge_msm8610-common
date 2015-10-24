@@ -46,9 +46,6 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.audio.low_latency.xml:system/etc/permissions/android.hardware.audio.low_latency.xml \
     frameworks/native/data/etc/android.hardware.bluetooth_le.xml:system/etc/permissions/android.hardware.bluetooth_le.xml \
     device/lge/msm8610-common/prebuilt/etc/permissions/com.qualcomm.location.xml:system/etc/permissions/com.qualcomm.location.xml
-#    frameworks/native/data/etc/android.hardware.nfc.xml:system/etc/permissions/android.hardware.nfc.xml \
-#    frameworks/native/data/etc/android.hardware.nfc.hce.xml:system/etc/permissions/android.hardware.nfc.hce.xml \
-#    frameworks/native/data/etc/com.android.nfc_extras.xml:system/etc/permissions/com.android.nfc_extras.xml
 
 # Configs
 PRODUCT_COPY_FILES += \
@@ -68,49 +65,22 @@ PRODUCT_COPY_FILES += \
     device/lge/msm8610-common/prebuilt/etc/media_profiles.xml:system/etc/media_profiles.xml \
     device/lge/msm8610-common/prebuilt/usr/idc/touch_dev.idc:system/usr/idc/touch_dev.idc \
     device/lge/msm8610-common/prebuilt/usr/keylayout/gpio-keys.kl:system/usr/keylayout/gpio-keys.kl \
-    device/lge/msm8610-common/prebuilt/etc/init.zetaw.fm.sh:system/etc/init.zetaw.fm.sh \
-    device/lge/msm8610-common/prebuilt/etc/init.zetaw.ssr.wifi.sh:system/etc/init.zetaw.ssr.wifi.sh \
-    device/lge/msm8610-common/prebuilt/etc/init.zetaw.wifi.sh:system/etc/init.zetaw.wifi.sh \
     device/lge/msm8610-common/prebuilt/etc/init.crda.sh:system/etc/init.crda.sh \
-    device/lge/msm8610-common/prebuilt/etc/init.zetaw.post_boot.sh:system/etc/init.zetaw.post_boot.sh \
     device/lge/msm8610-common/prebuilt/etc/sap.conf:system/etc/sap.conf \
     device/lge/msm8610-common/prebuilt/etc/gps.conf:system/etc/gps.conf \
     device/lge/msm8610-common/prebuilt/etc/msap.conf:system/etc/msap.conf \
     device/lge/msm8610-common/prebuilt/etc/clatd.conf:system/etc/clatd.conf \
     device/lge/msm8610-common/prebuilt/etc/sec_config:system/etc/sec_config \
     device/lge/msm8610-common/prebuilt/etc/izat.conf:system/etc/izat.conf \
-    device/lge/msm8610-common/prebuilt/etc/boot_fixup:system/etc/boot_fixup \
     device/lge/msm8610-common/prebuilt/etc/quipc.conf:system/etc/quipc.conf
-#    device/lge/msm8610-common/prebuilt/etc/libnfc-brcm.conf:system/etc/libnfc-brcm.conf \
-#    device/lge/msm8610-common/prebuilt/etc/nfc-nci.conf:system/etc/nfc-nci.conf \
-#    device/lge/msm8610-common/prebuilt/etc/libnfc-nxp.conf:system/etc/libnfc-nxp.conf \
-#    device/lge/msm8610-common/prebuilt/etc/nfcee_access.xml:system/etc/nfcee_access.xml \
 
 # Ramdisk
 PRODUCT_COPY_FILES += \
-    device/lge/msm8610-common/rootdir/init.class_main.sh:root/init.class_main.sh \
-    device/lge/msm8610-common/rootdir/init.lge.early.rc:root/init.lge.early.rc \
-    device/lge/msm8610-common/rootdir/init.lge.log.rc:root/init.lge.log.rc \
-    device/lge/msm8610-common/rootdir/init.lge.rc:root/init.lge.rc \
-    device/lge/msm8610-common/rootdir/init.mdm.sh:root/init.mdm.sh \
-    device/lge/msm8610-common/rootdir/init.usb.rc:root/init.usb.rc \
     device/lge/msm8610-common/rootdir/init.msm8610.rc:root/init.msm8610.rc \
     device/lge/msm8610-common/rootdir/init.msm8610.usb.rc:root/init.msm8610.usb.rc \
-    device/lge/msm8610-common/rootdir/init.msm8610_product.rc:root/init.msm8610_product.rc \
-    device/lge/msm8610-common/rootdir/init.zetaw.bt_vendor.rc:root/init.zetaw.bt_vendor.rc \
-    device/lge/msm8610-common/rootdir/init.zetaw.class_core.sh:root/init.zetaw.class_core.sh \
-    device/lge/msm8610-common/rootdir/init.zetaw.cmm.usb.sh:root/init.zetaw.cmm.usb.sh \
-    device/lge/msm8610-common/rootdir/init.zetaw.early_boot.sh:root/init.zetaw.early_boot.sh \
-    device/lge/msm8610-common/rootdir/init.zetaw.factory.sh:root/init.zetaw.factory.sh \
-    device/lge/msm8610-common/rootdir/init.zetaw.rc:root/init.zetaw.rc \
-    device/lge/msm8610-common/rootdir/init.zetaw.ril.sh:root/init.zetaw.ril.sh \
-    device/lge/msm8610-common/rootdir/init.zetaw.sh:root/init.zetaw.sh \
-    device/lge/msm8610-common/rootdir/init.zetaw.ssr.sh:root/init.zetaw.ssr.sh \
-    device/lge/msm8610-common/rootdir/init.zetaw.syspart_fixup.sh:root/init.zetaw.syspart_fixup.sh \
-    device/lge/msm8610-common/rootdir/init.zetaw.usb.rc:root/init.zetaw.usb.rc \
-    device/lge/msm8610-common/rootdir/init.zetaw.usb.sh:root/init.zetaw.usb.sh \
     device/lge/msm8610-common/rootdir/ueventd.msm8610.rc:root/ueventd.msm8610.rc \
-    device/lge/msm8610-common/prebuilt/etc/init.zetaw.bt.sh:system/etc/init.zetaw.bt.sh 
+    device/lge/msm8610-common/rootdir/init.qcom.ril.sh:system/etc/init.qcom.ril.sh \
+    device/lge/msm8610-common/prebuilt/etc/init.zetaw.bt.sh:system/etc/init.zetaw.bt.sh
 
 # TWRP
 PRODUCT_COPY_FILES += \
