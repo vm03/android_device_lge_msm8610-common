@@ -184,36 +184,4 @@ BOARD_SEPOLICY_DIRS += \
 
 BOARD_SEPOLICY_UNION += \
     device.te \
-    file_contexts \
-    file.te \
-    genfs_contexts \
-    hostapd.te \
-    init_shell.te \
-    init.te \
-    kcal_dev.te \
-    kernel.te \
-    keystore.te \
-    lge_touch_sysfs.te \
-    mediaserver.te \
-    mm-pp-daemon.te \
-    mm-qcamerad.te \
-    mpdecision.te \
-    nfc.te \
-    platform_app.te \
-    property_contexts \
-    property.te \
-    radio.te \
-    rmt_storage.te \
-    sensors.te \
-    servicemanager.te \
-    sysinit.te \
-    system_app.te \
-    system_server.te \
-    tee.te \
-    thermal-engine.te \
-    ueventd.te \
-    untrusted_app.te \
-    vibe_data_file.te \
-    vold.te \
-    wcnss_service.te \
-    wpa.te
+    file_contexts 
