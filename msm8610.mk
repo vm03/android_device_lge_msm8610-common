@@ -373,7 +373,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 #NFCEE_ACCESS_PATH := device/lge/w/prebuilt/etc/nfcee_access.xml
 
 # Keyhandler
-PRODUCT_PACKAGES += \
+#PRODUCT_PACKAGES += \
     com.cyanogenmod.keyhandler
 
 # QC time services
