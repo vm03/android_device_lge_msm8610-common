@@ -171,7 +171,7 @@ PRODUCT_PACKAGES += \
 #    FMRecord
 
 # GPS
-#PRODUCT_PACKAGES += \
+PRODUCT_PACKAGES += \
     gps.msm8610
 
 # HAL
