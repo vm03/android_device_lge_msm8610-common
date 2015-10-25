@@ -167,8 +167,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     qcom.fmradio \
     libqcomfm_jni \
-    FM2 \
-    FMRecord
+    FM2 
+#    FMRecord
 
 # GPS
 #PRODUCT_PACKAGES += \
