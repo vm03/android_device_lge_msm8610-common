@@ -269,6 +269,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.bluetooth.request.master=true \
     ro.bluetooth.remote.autoconnect=true
 
+
+# BoringSSL hacks
+PRODUCT_PACKAGES += \
+    libboringssl-compat
+
 # Media
 PRODUCT_PROPERTY_OVERRIDES += \
     lpa.decode=true \

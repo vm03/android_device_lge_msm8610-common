@@ -32,6 +32,9 @@ import init.msm8610.usb.rc
 
 on init
 
+    # BoringSSL hacks
+    export LD_PRELOAD "/system/lib/libboringssl-compat.so"
+
     # Support legacy paths
     symlink /sdcard /mnt/sdcard
     symlink /sdcard /storage/sdcard0
