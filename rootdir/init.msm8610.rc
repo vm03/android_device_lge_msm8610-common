@@ -358,11 +358,6 @@ service sensors /system/bin/sensors.qcom
     user root
     group root radio system
 
-service sensorservice /system/bin/sensorservice
-    class late_start
-    user root
-    group root radio system
-
 # Adjust socket buffer to enlarge TCP receive window for high bandwidth
 # but only if ro.data.large_tcp_window_size property is set.
 on property:ro.data.large_tcp_window_size=true
