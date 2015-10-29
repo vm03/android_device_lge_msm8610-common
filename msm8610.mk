@@ -164,11 +164,9 @@ PRODUCT_PACKAGES += \
     libebtc
 
 # FM radio
-#PRODUCT_PACKAGES += \
-    qcom.fmradio \
-    libqcomfm_jni \
-    FM2 
-#    FMRecord
+PRODUCT_PACKAGES += \
+    FMRadio \
+    libfmjni
 
 # GPS
 PRODUCT_PACKAGES += \
