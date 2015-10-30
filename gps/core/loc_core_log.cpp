@@ -100,7 +100,7 @@ const char* loc_get_position_recurrence_name(GpsPositionRecurrence recur)
     return loc_get_name_from_val(loc_eng_position_recurrences, loc_eng_position_recurrence_num, (long) recur);
 }
 
-
+/*
 
 static loc_name_val_s_type loc_eng_aiding_data_bits[] =
 {
@@ -134,7 +134,7 @@ static loc_name_val_s_type loc_eng_aiding_data_bits[] =
     NAME_VAL( GPS_DELETE_ALL)
 };
 static int loc_eng_aiding_data_bit_num = sizeof(loc_eng_aiding_data_bits) / sizeof(loc_name_val_s_type);
-
+*/
 const char* loc_get_aiding_data_mask_names(GpsAidingData data)
 {
     return NULL;
