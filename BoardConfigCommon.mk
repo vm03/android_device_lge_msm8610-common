@@ -76,6 +76,8 @@ USE_CUSTOM_AUDIO_POLICY := 1
 
 # GPS
 TARGET_NO_RPC := true
+TARGET_GPS_HAL_PATH := $(PLATFORM_PATH)/gps
+TARGET_PROVIDES_GPS_LOC_API := true
 
 # Graphics
 BOARD_EGL_CFG := device/lge/msm8610-common/prebuilt/egl.cfg
