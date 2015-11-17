@@ -356,6 +356,11 @@ PRODUCT_PACKAGES += \
     timekeep \
     TimeKeep
 
+
+PRODUCT_PACKAGES += \
+    librmnetctl \
+    rmnetcli
+
 # QC time services
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.timed.enable=true
