@@ -82,6 +82,9 @@ on boot
     mkdir /dev/socket/qmux_gps 0770 gps gps
     chmod 2770 /dev/socket/qmux_gps
 
+    #Create NETMGR daemon socket area
+    mkdir /dev/socket/netmgr 0750 radio radio
+
     # Subsytem Restart
     #adsp
     write /sys/bus/msm_subsys/devices/subsys0/restart_level "related"
