@@ -295,6 +295,9 @@ on post-fs-data
     mkdir /data/system 0775 system system
     #symlink /data/misc/wifi/wpa_supplicant /data/system/wpa_supplicant
 
+    # Create /data/time folder for time-services
+    mkdir /data/time/ 0700 system system
+
     #Create directories for wiper services
     mkdir /data/wpstiles/ 0755 shell
     mkdir /data/wiper 0755 gps qcom_oncrpc
@@ -628,10 +631,14 @@ on property:sys.boot_completed=1
 
     start mpdecision
 
-
 service fm_dl /system/bin/sh /system/etc/init.qcom.fm.sh
     class late_start
     user system
     group system
     disabled
     oneshot
+
+service time_daemon /system/bin/time_daemon
+   class late_start
+   user root
+   group root

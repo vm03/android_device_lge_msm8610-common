@@ -348,12 +348,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PACKAGES += \
     com.cyanogenmod.keyhandler
 
-# Sony timekeep
-PRODUCT_PACKAGES += \
-    timekeep \
-    TimeKeep
-
-
 PRODUCT_PACKAGES += \
     librmnetctl \
     rmnetcli
