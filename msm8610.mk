@@ -70,7 +70,8 @@ PRODUCT_COPY_FILES += \
     device/lge/msm8610-common/prebuilt/etc/clatd.conf:system/etc/clatd.conf \
     device/lge/msm8610-common/prebuilt/etc/sec_config:system/etc/sec_config \
     device/lge/msm8610-common/gps/izat.conf:system/etc/izat.conf \
-    device/lge/msm8610-common/gps/quipc.conf:system/etc/quipc.conf
+    device/lge/msm8610-common/gps/quipc.conf:system/etc/quipc.conf \
+    device/lge/msm8610-common/prebuilt/etc/init.qcom.fm.sh:system/etc/init.qcom.fm.sh
 
 # Ramdisk
 PRODUCT_COPY_FILES += \
@@ -163,10 +164,8 @@ PRODUCT_PACKAGES += \
 
 # FM radio
 PRODUCT_PACKAGES += \
-    qcom.fmradio \
-    libqcomfm_jni \
-    FM2 \
-    FMRecord
+    FMRadio \
+    libfmjni
 
 # GPS
 PRODUCT_PACKAGES += \
